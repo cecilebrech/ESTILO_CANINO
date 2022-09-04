@@ -1,0 +1,169 @@
+h2,p{ 
+font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+padding-left: 20px;
+}
+#logo{
+    width:500px;
+    
+}
+header{
+    text-align:center;
+    background-color:rgb(137, 137, 137);
+    background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(0, 8%, 76%, 0.5) 35px, hsla(0, 8%, 76%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+  hsla(135, 3%, 76%, 0.5) 60px, hsla(135, 3%, 76%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(285, 64%, 24%, 0.5) 90px, hsla(285, 64%, 24%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+  ),
+repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(0, 8%, 76%, 0.5) 35px, hsla(0, 8%, 76%, 0.5) 40px,
+hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+hsla(135, 3%, 76%, 0.5) 60px, hsla(135, 3%, 76%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 80px,
+hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(285, 64%, 24%, 0.5) 90px, hsla(285, 64%, 24%, 0.5) 110px,
+hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+);
+}
+
+nav{
+  background-image: linear-gradient(rgb(93, 92, 92), rgb(206, 206, 201));
+}
+
+
+
+ul{
+     
+    list-style-type:none;
+    margin-top:0;
+    overflow: hidden;
+    background-color: #77777780;
+    
+    
+    
+}
+      
+     li {
+        display:inline;
+        float:left;
+       
+        
+        
+      }
+      
+      li a {
+        display: block;
+        color:black;
+        font-weight: bolder;
+        padding: 16px;
+        text-decoration: none;
+        font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+        
+        
+
+      }
+      
+      li a:hover {
+        transition:background-color 0.3s ease-in; 
+       background-color:  #51166480;
+        color:greenyellow;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        
+      }
+      
+      .column p{
+        width:70%;
+        color:rgb(59, 58, 58);
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      div h2{
+        color:#73AD21;
+        text-shadow: 2px 2px 3px rgb(177, 174, 174);
+      }
+
+div img{
+  margin-top: 10%;
+  width: 70%;
+  border: 3px solid #73AD21;
+  
+}
+footer{
+  margin-top: 10%;
+  height: 40px;
+  text-align:center;
+  background-color:rgb(137, 137, 137);
+  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(0, 8%, 76%, 0.5) 35px, hsla(0, 8%, 76%, 0.5) 40px,
+  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+  hsla(135, 3%, 76%, 0.5) 60px, hsla(135, 3%, 76%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 80px,
+  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(320, 2%, 39%, 0.5) 90px, hsla(320, 2%, 39%, 0.5) 110px,
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+  ),
+repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(0, 8%, 76%, 0.5) 35px, hsla(0, 8%, 76%, 0.5) 40px,
+hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+hsla(135, 3%, 76%, 0.5) 60px, hsla(135, 3%, 76%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 70px, hsla(120, 3%, 54%, 0.5) 80px,
+hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(320, 2%, 39%, 0.5) 90px, hsla(320, 2%, 39%, 0.5) 110px,
+hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+);
+}
+
+body{
+   background-color:#f6f4f4;
+   
+}
+thead{
+  background-color: #73AD21;
+  color:whitesmoke;
+
+}
+
+table{
+  margin-top: 10%;
+}
+table,tr,td{
+  border:1px solid #73AD21;
+}
+
+#barrios{
+  color:rgb(59, 58, 58);
+}
+
+.gmap_canvas{
+  border:1px solid #73AD21;
+  margin-top: 50px;
+}
+
+form{
+  margin-top:10%;
+  margin-right:10%;
+  width: 50%;
+  background-color:white;
+  box-sizing:border-box;
+  padding: 3%;
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+  border: 1px solid#73AD21;
+}
+
+form button{
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+  background-color:rgb(186, 239, 105);
+  }
+
+  #perro-contacto{
+  
+  width: 70%;
+  border: 3px solid #73AD21;
+  }
+
+.fa-instagram, .fa-facebook, .fa-twitter{
+  color: rgb(186, 239, 105);
+  width:10%;
+  padding: 1%;
+}
