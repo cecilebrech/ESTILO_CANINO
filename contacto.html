@@ -73,7 +73,7 @@
 
           <div class="col">
             <p>Contactenos para cualquier consulta!</p>
-            <form action="show-data.html" target="_blank">
+            <form action="show-data.html" target="_blank" name="fvalida">
    
 
                 <label for="firstname">Nombre:</label>
@@ -88,29 +88,17 @@
                 <input size="30" type="text"class="form-control" name="zipcode" ><br><br>
                 <label for="birthdate">Fecha de nac. (dd/mm/yyyy):</label>
                 <input type="date" class="form-control" name="birthdate"><br><br>
-                <label for="coments">Comentarios:</label>
-                <textarea name="coments"class="form-control"rows="5" cols="30"></textarea><br><br>
+                <label for="comments">Comentarios:</label>
+                <textarea name="comments"class="form-control"rows="5" cols="30"></textarea><br><br>
     
-                <!-- <input type="submit" value="Enviar">-->
-                <button type="send" class= "btn btn-success" >Enviar</button>
-                <button type="reset" class= "btn btn-success" >Reset</button>
+               
+
+                <input type="button" value="Enviar" class="btn btn-success" onclick="valida_envia()">
+                <button type="reset" class= "btn btn-success" >Reset</button> 
         </form>
           </div>
         
    
-    
-    
-        
-            
-            
-
-       
-    
-    
-        
-    
-    
-       
         
 
       <footer>
@@ -132,6 +120,77 @@
         
             </div>
             </footer>
+
+
+
+
+
+            <script>
+             
+              function valida_envia() {
+                
+                  if (document.fvalida.firstname.value.length == 0){
+                      alert("Tiene que escribir su nombre");
+                      document.fvalida.firstname.focus()
+                      return 0;
+                  
+                  }else if (document.fvalida.lastname.value.length == 0){
+                    alert("Tiene que escribir su apellido");
+                    document.fvalida.lastname.focus()
+                    return 0;
+                  }else if (document.fvalida.address.value.length == 0){
+                    alert("Tiene que escribir su direccion");
+                    document.fvalida.address.focus()
+                    return 0;
+                  }else if (document.fvalida.city.value.length == 0){
+                    alert("Tiene que escribir su ciudad");
+                    document.fvalida.city.focus()
+                    return 0;
+                  }
+
+                  //valido el zipcode. tiene que ser numero.
+            zipcode = document.fvalida.zipcode.value
+            zipcode = validarEntero(zipcode)
+            document.fvalida.zipcode.value = zipcode
+            if (zipcode == "") {
+                alert("Tiene que introducir un número en su codigo postal.")
+                document.fvalida.zipcode.focus()
+                return 0;
+        
+             
+            }else {
+              alert("Gracias por enviar el formulario")
+                document.fvalida.submit(); 
+            }
+
+
+              
+
+                  
+            }
+            
+
+
+
+            function validarEntero(valor) {
+            
+            valor = parseInt(valor)
+
+            
+            if (isNaN(valor)) {
+                
+                return ""
+            } else {
+                
+                return valor
+            }
+
+
+          }
+            
+              
+        
+          </script>
 </body>
 
 </html>
