@@ -164,6 +164,7 @@ hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5)
 body{
    background-color:#f6f4f4;
    
+   
 }
 
 /* TABLE SERVICIOS */
@@ -230,6 +231,7 @@ form{
 @media only screen and (max-width: 600px) {
   .grid-container{display:grid; grid-template-columns: 0.25fr;}
   .contenedor-footer{display:flex; align-content:stretch;flex-direction: column;}
+   
   .flex-header,.SOCIAL-MEDIA{ display:flex; align-content: center;flex-direction: row;}
 }/* Small devices (600px and up) */
 @media only screen and (min-width: 600px) {

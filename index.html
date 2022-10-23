@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    
     <header>
     <div class="SOCIAL-MEDIA">
         <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a><br>
@@ -41,7 +42,17 @@
 
     <div class="grid-container">
         <div class="itemA"><h2>Quienes Somos</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A qui, laborum laboriosam, voluptate recusandae neque enim, natus iure culpa esse error libero sint. Rerum omnis cupiditate reprehenderit laborum atque tempore eveniet in. Excepturi corporis dicta reprehenderit adipisci magnam quam voluptas, perspiciatis sed mollitia atque consectetur voluptatum, sint sunt enim veritatis libero unde alias eius. Expedita odio laborum recusandae modi quos voluptas fugiat porro necessitatibus et cum blanditiis nisi fugit provident aliquid harum possimus dolor quasi soluta ducimus, error autem quis amet officiis? Voluptatibus, enim consequatur. Expedita, tempora quas! Ex dignissimos numquam iusto, qui beatae deserunt mollitia blanditiis quasi iste eaque.</p></div>
-        <div class="itemB"><img class="DOG_1"src="IMAGENES/DOG_1.jpeg"></div>
+        <div class="itemB"><h1>Using Axios to get Pokémon Data</h1>
+            <div>
+                Please Enter an ID:
+                <input type="number" min="1" value="1" class="pokemon-input"></input>
+            </div>
+            <div>
+                <span class="pokemon-name"></span>
+            </div>
+            <img class="pokemon-image"></img>
+            <button class="pokemon-button">Load Pokémon Data</button>
+       </div>
        
       </div>
     
@@ -66,7 +77,8 @@
     </div>
     </footer>
     
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
