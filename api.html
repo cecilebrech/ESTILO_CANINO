@@ -21,8 +21,8 @@
 
 <body>
     <div class="container">
-        
-            <header>
+    
+    <header>
     <div class="SOCIAL-MEDIA">
         <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a><br>
         <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a><br>
@@ -43,15 +43,22 @@
 </nav>
 
     <div class="grid-container">
-        <div class="itemA"><h2>Quienes Somos</h2><p>Somos una empresa dedicada al cuidado y belleza estética de su mascota,  contamos
-            con un equipo tanto humano como técnico especializado con el fin de satisfacer las
-            necesidades de cada uno de nuestros clientes, generándoles bienestar, calidad y
-            respeto.Nuestra prioridad es el cuidado de tu fiel mascota, ya sea mientras lo bañamos,
-            cortamos el pelo u otro de los servicios ofrecidos siempre se va a sentir mimada,
-            cuidada tratando de brindarle una experiencia genial con ganas de volver.</p></div>
-        <div class="itemB"><img class="DOG_2" src="IMAGENES/DOG_2.jpeg" alt="perro2"></div>
+        <div class="itemA"><h2>Llamada a una API</h2><p>Api REST de Pokemon</p></div>
+        <div class="itemB"><h2>Usando Axios </h2>
+            <div>
+                Introduzca un numero:
+                <input type="number" min="1" value="1" class="pokemon-input"></input>
+            </div>
+            <div>
+                <span class="pokemon-name"></span>
+            </div>
+            <img class="pokemon-image"></img>
+            <button class="pokemon-button">Cargar Pokémon</button>
+       </div>
+       
+      </div>
     
-        </div>
+        
       <footer>
 <div class="contenedor-footer">
         
@@ -69,12 +76,13 @@
        
         
         <p class="COPYRIGHT"> Copyright : Codo a Codo 2022</p>
-    </div>
-    
+
     </div>
     </footer>
-
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+    <script src="JS/app.js"></script>
+    </div>
 </body>
 
 </html>

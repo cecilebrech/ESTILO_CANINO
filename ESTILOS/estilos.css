@@ -44,11 +44,13 @@ p{
   font-family: 'Open Sans',Arial, Helvetica,sans-serif;
   
   }
-      h2{
-        color:#73AD21;
-        text-shadow: 2px 2px 3px rgb(177, 174, 174);
-        font-family: 'Open Sans',Arial, Helvetica,sans-serif;
-      }
+  
+h2{
+  color:#73AD21;
+  text-shadow: 2px 2px 3px rgb(177, 174, 174);
+  font-family: 'Open Sans',Arial, Helvetica,sans-serif;
+  }
+
 
 
 /* IMAGENES*/
@@ -74,7 +76,7 @@ p{
   
 }
 
-.boton_home, .boton_servicios, .boton_ubicacion, .boton_contacto {
+.boton_home, .boton_servicios, .boton_ubicacion, .boton_contacto, .boton_api {
   
   text-decoration:none;
   color:white;
@@ -82,15 +84,15 @@ p{
   
 }
 
-.item-home,.item-servicios,.item-ubicacion,.item-contacto{
+.item-home,.item-servicios,.item-ubicacion,.item-contacto, .item-api{
   padding:15px;
 }
-.boton_home:hover, .boton_servicios:hover, .boton_ubicacion:hover, .boton_contacto:hover {
+.boton_home:hover, .boton_servicios:hover, .boton_ubicacion:hover, .boton_contacto:hover, .boton_api:hover {
   transition:color 0.3s ease-in; 
   color: greenyellow;
 }
 
-.item-home:hover,.item-servicios:hover,.item-ubicacion:hover,.item-contacto:hover {
+.item-home:hover,.item-servicios:hover,.item-ubicacion:hover,.item-contacto:hover, .item-api:hover {
   transition:background-color 0.3s ease-in; 
   background-color:  #51166480;
   
@@ -137,13 +139,13 @@ hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5)
   justify-content:center;
   
 }
-.boton_home2, .boton_servicios2, .boton_ubicacion2, .boton_contacto2{
+.boton_home2, .boton_servicios2, .boton_ubicacion2, .boton_contacto2, .boton_api2 {
   padding: 10px;
   font-family: 'Open Sans',Arial, Helvetica,sans-serif;
   text-decoration: none;
   color:white;
 }
-.boton_home2:hover, .boton_servicios2:hover, .boton_ubicacion2:hover, .boton_contacto2:hover{
+.boton_home2:hover, .boton_servicios2:hover, .boton_ubicacion2:hover, .boton_contacto2:hover,.boton_api2:hover {
   padding: 10px;
   font-family: 'Open Sans',Arial, Helvetica,sans-serif;
   text-decoration: none;
@@ -227,26 +229,44 @@ form{
 
 /* Extra small devices (600px and down) */
 @media only screen and (max-width: 600px) {
-  .grid-container{display:grid; grid-template-columns: 0.25fr;}
-  .contenedor-footer{display:flex; align-content:stretch;flex-direction: column;}
-  .flex-header,.SOCIAL-MEDIA{ display:flex; align-content: center;flex-direction: row;}
+  .grid-container {display:grid; grid-template-columns: 0.25fr;}
+  .contenedor-footer {display:flex; align-content:stretch;flex-direction: column;}
+  .flex-header,.SOCIAL-MEDIA {display:flex; align-content: center;flex-direction: row;}
+  .flex-container {display:flex;flex-direction: column;}
   
 }/* Small devices (600px and up) */
 @media only screen and (min-width: 600px) {
   .grid-container{display:grid; grid-template-columns: 0.25fr;}
   .contenedor-footer{display:flex; align-content:stretch;flex-direction: column;}
-  .flex-header,.SOCIAL-MEDIA{ display:flex; align-content: center;flex-direction: row;}
-  
+  .flex-header,.SOCIAL-MEDIA{display:flex; align-content: center;flex-direction: row;}
+  .flex-container {display:flex;flex-direction: column;}
 }/* Medium devices (768px and up)*/ 
 @media only screen and (min-width: 768px) {
   .grid-container{display:grid; grid-template-columns: 0.5fr;}
-  .contenedor-footer{display:flex; align-content:stretch;flex-direction: column;}
+  .contenedor-footer{display:flex;align-content:stretch;flex-direction: column;}
+  .flex-header,.SOCIAL-MEDIA {display:flex; align-content: center;flex-direction: row;}
+  .flex-container {display:flex;flex-direction: row;}
+
 }/* Large devices (992px and up)*/ 
 @media only screen and (min-width: 992px) {
   .grid-container{display:grid; grid-template-columns: 1fr 1fr;}
   .contenedor-footer{display:flex; align-content:stretch;flex-direction: column;}
+  .flex-header,.SOCIAL-MEDIA  {display:flex; align-content: center;flex-direction: row;}
+  .flex-container {display:flex;flex-direction: row;}
+
 /* Extra large devices (1200px and up) */
 }@media only screen and (min-width: 1200px) {
   .grid-container{display:grid; grid-template-columns: 1fr 1fr;}
   .contenedor-footer{display:flex; align-content:stretch;flex-direction: column;}
+  .flex-container {display:flex;flex-direction: row;}
 }
+
+
+/* CENTRAR LA PAGINA -(NO SALIO POR ESO LO COMENTO.)*/
+/*
+.container{
+  max-width: 1400px;
+  max-height:fit-content;
+  margin: auto;
+}
+*/
