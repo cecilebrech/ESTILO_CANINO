@@ -20,69 +20,100 @@
 </head>
 
 <body>
-    <div class="container">
-    
-    <header>
-    <div class="SOCIAL-MEDIA">
-        <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a><br>
-        <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a><br>
-        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a> 
-    </div>
-    <div class="flex-header">
-        <img class="animate__animated animate__bounce" src="IMAGENES/LOGO.png"> 
-    </div>
-</header>
-<nav>
-    <div class="flex-container"> 
-        <div class="item-home"><a class="boton_home" href="index.html">home</a></div> 
-        <div class="item-servicios"><a class="boton_servicios" href="servicios.html">servicios</a></div>
-        <div class="item-ubicacion"><a class="boton_ubicacion" href="ubicacion.html">ubicacion</a></div>
-        <div class="item-contacto"><a class="boton_contacto" href="contacto.html">contacto</a></div>
-        <div class="item-api"><a class="boton_api" href="api.html">api</a></div>
-    </div>
-</nav>
-
-    <div class="grid-container">
-        <div class="itemA"><h2>Llamada a una API</h2><p>Api REST de Pokemon</p></div>
-        <div class="itemB"><h2>Usando Axios </h2>
-            <div>
-                Introduzca un numero:
-                <input type="number" min="1" value="1" class="pokemon-input"></input>
-            </div>
-            <div>
-                <span class="pokemon-name"></span>
-            </div>
-            <img class="pokemon-image"></img>
-            <button class="pokemon-button">Cargar Pokémon</button>
+   
+    <div class="contenedor-total">
+        <header>
+       <div class="sub-contenedor-social-media">
+           <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a><br>
+           <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a><br>
+           <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a> 
+       
        </div>
        
-      </div>
-    
-        
-      <footer>
-<div class="contenedor-footer">
-        
-        <img class="LOGO_CHIQUITO" src="IMAGENES/LOGO.png">
-    
-
-      
-        <div class="flex-nav2"> 
-            <div class="item-home2"><a class="boton_home2" href="index.html">home</a></div> 
-            <div class="item-servicios2"><a class="boton_servicios2" href="servicios.html">servicios</a></div>
-            <div class="item-ubicacion2"><a class="boton_ubicacion2" href="ubicacion.html">ubicacion</a></div>
-            <div class="item-contacto2"><a class="boton_contacto2" href="contacto.html">contacto</a></div>
-            <div class="item-api2"><a class="boton_api2" href="api.html">api</a></div>
-        </div>
+       <div class="sub-contenedor-logo">
+       <img img class="animate__animated animate__bounce" src="IMAGENES/LOGO.png"alt="logo_perro">
+       </div>
        
-        
-        <p class="COPYRIGHT"> Copyright : Codo a Codo 2022</p>
+       
+       <nav>
+       <div class="sub-contenedor-nav">
+           <div class="item-home"><a class="boton_home" href="index.html">home</a></div> 
+           <div class="item-servicios"><a class="boton_servicios" href="servicios.html">servicios</a></div>
+           <div class="item-ubicacion"><a class="boton_ubicacion" href="ubicacion.html">ubicacion</a></div>
+           <div class="item-contacto"><a class="boton_contacto" href="contacto.html">contacto</a></div>
+           <div class="item-api"><a class="boton_api" href="api.html">api</a></div>
+       </div>
+       
+      
+       </nav>
+       </header>
+       
+       <main>
+       <div class="sub-contenedor-texto">
+       
+           <div class="row">
+               <div class="column">
+                 <div class="text-column">
+                   <h2>Llamada a la API REST de Pokemon</h2>
+                   <p>Usando la libreria Axios</p>
+                 </div>
+               </div>
+               <div class="column">
+                 <div class="green-column">
+                   
+                    <div>
+                        Introduzca un numero:
+                        <input type="number" min="1" value="1" class="pokemon-input"></input>
+                    </div>
+                    <div>
+                        <span class="pokemon-name"></span>
+                    </div>
+                    <img class="pokemon-image"></img>
+                    <button class="pokemon-button">Cargar Pokémon</button>
+                </div>
 
-    </div>
-    </footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
-    <script src="JS/app.js"></script>
-    </div>
+
+
+
+
+                 </div>
+               </div>
+               </div>
+       </div>
+       </main>
+       
+       <footer>
+       
+       
+           <div class="sub-contenedor-footer">
+           <img class="LOGO_CHIQUITO" src="IMAGENES/LOGO.png" alt="logo_can">
+           
+       
+             
+           <div class="flex-nav2"> 
+               <div class="item-home2"><a class="boton_home2" href="index.html">home</a></div> 
+               <div class="item-servicios2"><a class="boton_servicios2" href="servicios.html">servicios</a></div>
+               <div class="item-ubicacion2"><a class="boton_ubicacion2" href="ubicacion.html">ubicacion</a></div>
+               <div class="item-contacto2"><a class="boton_contacto2" href="contacto.html">contacto</a></div>
+               <div class="item-api2"><a class="boton_api2" href="api.html">api</a></div>
+           </div>
+          
+           
+           <p class="COPYRIGHT"> Copyright : Codo a Codo 2022</p>
+       </div>
+       
+       </footer>
+       
+       
+           </div>
+
+
+
+
+
+
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+           <script src="JS/app.js"></script>
 </body>
 
 </html>
